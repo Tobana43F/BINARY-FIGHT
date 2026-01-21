@@ -1,0 +1,11 @@
+.vs
+*.vcxproj.filters
+*.vcxproj.user
+
+packages/
+_Resource/
+Debug/
+Release/
+x64/
+x86/
+BINARY-FIGHT/
