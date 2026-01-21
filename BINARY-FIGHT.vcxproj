@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9af0e193-c48d-40a4-8ad5-b11588fe1296}</ProjectGuid>
+    <RootNamespace>BINARYFIGHT</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\AbstractStage.cpp" />
+    <ClCompile Include="Sources\Actor.cpp" />
+    <ClCompile Include="Sources\Battle.cpp" />
+    <ClCompile Include="Sources\BattleConfigInfo.cpp" />
+    <ClCompile Include="Sources\BattleEffect.cpp" />
+    <ClCompile Include="Sources\BattleInput.cpp" />
+    <ClCompile Include="Sources\BattleUI.cpp" />
+    <ClCompile Include="Sources\BoundingBox.cpp" />
+    <ClCompile Include="Sources\CharacterDots.cpp" />
+    <ClCompile Include="Sources\CharacterDotsCPU.cpp" />
+    <ClCompile Include="Sources\CharacterSelect.cpp" />
+    <ClCompile Include="Sources\CharacterSelectForArcadeMode.cpp" />
+    <ClCompile Include="Sources\CharacterShadow.cpp" />
+    <ClCompile Include="Sources\CharDotsForTutorial.cpp" />
+    <ClCompile Include="Sources\CollisionBoundingBox.cpp" />
+    <ClCompile Include="Sources\Debug.cpp" />
+    <ClCompile Include="Sources\Destroy.cpp" />
+    <ClCompile Include="Sources\DirectX.cpp" />
+    <ClCompile Include="Sources\GameReady.cpp" />
+    <ClCompile Include="Sources\InitValue.cpp" />
+    <ClCompile Include="Sources\Input.cpp" />
+    <ClCompile Include="Sources\ModeArcade.cpp" />
+    <ClCompile Include="Sources\ModeManual.cpp" />
+    <ClCompile Include="Sources\ModeSelect.cpp" />
+    <ClCompile Include="Sources\ModeTutorial.cpp" />
+    <ClCompile Include="Sources\ModeVersus.cpp" />
+    <ClCompile Include="Sources\MyAnimation.cpp" />
+    <ClCompile Include="Sources\MyHitBox.cpp" />
+    <ClCompile Include="Sources\MySound.cpp" />
+    <ClCompile Include="Sources\MyTexture.cpp" />
+    <ClCompile Include="Sources\Polygon.cpp" />
+    <ClCompile Include="Sources\Render.cpp" />
+    <ClCompile Include="Sources\RoundEffect.cpp" />
+    <ClCompile Include="Sources\Run.cpp" />
+    <ClCompile Include="Sources\ShareBaseFunc.cpp" />
+    <ClCompile Include="Sources\StageSkyPlace.cpp" />
+    <ClCompile Include="Sources\StageTraining.cpp" />
+    <ClCompile Include="Sources\TextureLoader.cpp" />
+    <ClCompile Include="Sources\Timer.cpp" />
+    <ClCompile Include="Sources\Title.cpp" />
+    <ClCompile Include="Sources\TutorialStep.cpp" />
+    <ClCompile Include="Sources\Update.cpp" />
+    <ClCompile Include="Sources\XAudio2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\AbstractStage.h" />
+    <ClInclude Include="Sources\Actor.h" />
+    <ClInclude Include="Sources\AllCharacterHeader.h" />
+    <ClInclude Include="Sources\AllStageHeader.h" />
+    <ClInclude Include="Sources\AnimationLoader.h" />
+    <ClInclude Include="Sources\AttackInfo.h" />
+    <ClInclude Include="Sources\Battle.h" />
+    <ClInclude Include="Sources\BattleConfigInfo.h" />
+    <ClInclude Include="Sources\BattleEffect.h" />
+    <ClInclude Include="Sources\BattleInput.h" />
+    <ClInclude Include="Sources\BattleUI.h" />
+    <ClInclude Include="Sources\BoundingBox.h" />
+    <ClInclude Include="Sources\CharacterDots.h" />
+    <ClInclude Include="Sources\CharacterDotsCPU.h" />
+    <ClInclude Include="Sources\CharacterSelect.h" />
+    <ClInclude Include="Sources\CharacterSelectForArcadeMode.h" />
+    <ClInclude Include="Sources\CharacterShadow.h" />
+    <ClInclude Include="Sources\CharDotsForTutorial.h" />
+    <ClInclude Include="Sources\CollisionBoundingBox.h" />
+    <ClInclude Include="Sources\Common.h" />
+    <ClInclude Include="Sources\Constants.h" />
+    <ClInclude Include="Sources\constCharacterList.h" />
+    <ClInclude Include="Sources\constStageList.h" />
+    <ClInclude Include="Sources\Debug.h" />
+    <ClInclude Include="Sources\GameReady.h" />
+    <ClInclude Include="Sources\Input.h" />
+    <ClInclude Include="Sources\ModeArcade.h" />
+    <ClInclude Include="Sources\ModeManual.h" />
+    <ClInclude Include="Sources\ModeSelect.h" />
+    <ClInclude Include="Sources\ModeTutorial.h" />
+    <ClInclude Include="Sources\ModeVersus.h" />
+    <ClInclude Include="Sources\MyAnimation.h" />
+    <ClInclude Include="Sources\MyDefinitions.h" />
+    <ClInclude Include="Sources\MyHitBox.h" />
+    <ClInclude Include="Sources\MySound.h" />
+    <ClInclude Include="Sources\MyTexture.h" />
+    <ClInclude Include="Sources\Polygon.h" />
+    <ClInclude Include="Sources\RoundEffect.h" />
+    <ClInclude Include="Sources\ShareBaseFunc.h" />
+    <ClInclude Include="Sources\StageSkyPlace.h" />
+    <ClInclude Include="Sources\StageTraining.h" />
+    <ClInclude Include="Sources\TextureLoader.h" />
+    <ClInclude Include="Sources\Timer.h" />
+    <ClInclude Include="Sources\Title.h" />
+    <ClInclude Include="Sources\TutorialStep.h" />
+    <ClInclude Include="Sources\XAudio2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets" Condition="Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets'))" />
+  </Target>
+</Project>

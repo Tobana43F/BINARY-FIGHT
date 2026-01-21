@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BINARY-FIGHT.vcxproj" Id="9af0e193-c48d-40a4-8ad5-b11588fe1296" />
+</Solution>
