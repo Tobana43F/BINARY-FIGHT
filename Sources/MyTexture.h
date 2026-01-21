@@ -1,0 +1,159 @@
+//==========================================================
+// 使用するテクスチャの管理
+#ifndef _MY_TEXTURE_H
+#define _MY_TEXTURE_H
+
+#include	<stdarg.h>					// 可変引数を利用した関数を作るため
+
+namespace textureNS{
+	// テクスチャの指定をする定数
+	enum eTextureLabel{
+		// 汎用
+		_NO_TEXTURE = 0,
+		_ALPHA_TEXTURE,
+
+		// 全体
+		GENERAL_NOW_LOADING_STRING,
+
+		// フォント
+		FONT_SYSTEM,
+		FONT_DOT_AND_SHADOW,
+
+		// タイトル
+		TITLE_BACK,
+		TITLE_STRING,
+
+		// マニュアル
+		MANUAL_PAGE1,
+		MANUAL_PAGE2,
+		MANUAL_PAGE3,
+		MANUAL_PAGE4,
+
+		// チュートリアル
+		TUTORIAL_CLEAR,
+		TUTORIAL_BAR,
+		TUTORIAL_BAR_CAP,
+
+		// チュートリアルのステップごとのテクスチャ
+		TUTORIAL_STEP_MOVE_TITLE,
+		TUTORIAL_STEP_MOVE_DESCRIPTION,
+		TUTORIAL_STEP_MOVE_INSTRACT_1,
+		TUTORIAL_STEP_MOVE_INSTRACT_2,
+
+		TUTORIAL_STEP_JUMP_TITLE,
+		TUTORIAL_STEP_JUMP_DESCRIPTION,
+		TUTORIAL_STEP_JUMP_INSTRACT_1,
+		TUTORIAL_STEP_JUMP_INSTRACT_2,
+		TUTORIAL_STEP_JUMP_INSTRACT_3,
+
+		TUTORIAL_STEP_ATTACK_TITLE,
+		TUTORIAL_STEP_ATTACK_DESCRIPTION,
+		TUTORIAL_STEP_ATTACK_INSTRACT_1,
+
+		TUTORIAL_STEP_GUARD_HIGH_POS_TITLE,
+		TUTORIAL_STEP_GUARD_HIGH_POS_DESCRIPTION,
+		TUTORIAL_STEP_GUARD_HIGH_POS_INSTRACT_1,
+
+		TUTORIAL_STEP_GUARD_LOW_POS_TITLE,
+		TUTORIAL_STEP_GUARD_LOW_POS_DESCRIPTION,
+		TUTORIAL_STEP_GUARD_LOW_POS_INSTRACT_1,
+
+		TUTORIAL_STEP_GUARD_MID_POS_TITLE,
+		TUTORIAL_STEP_GUARD_MID_POS_DESCRIPTION,
+		TUTORIAL_STEP_GUARD_MID_POS_INSTRACT_1,
+
+		TUTORIAL_STEP_BATTLE_TITLE,
+		TUTORIAL_STEP_BATTLE_DESCRIPTION,
+		TUTORIAL_STEP_BATTLE_INSTRACT_1,
+
+		// メニュー画面のカーソル
+		MODE_SELECT_CURSOR,
+		MODE_SELECT_BACK,
+		MODE_SELECT_DESCRIPTION_ARCADE,
+		MODE_SELECT_DESCRIPTION_VERSUS,
+		MODE_SELECT_DESCRIPTION_TUTORIAL,
+		MODE_SELECT_DESCRIPTION_MANUAL,
+
+		// キャラクター
+		CHAR_DOTS_NORMAL,	// 追加キャラクター(テスト)
+		CHAR_DOTS_DAMAGE,
+		CHAR_DOTS_ATTACK_NORMAL,
+		CHAR_DOTS_POSE,
+
+		// ステージ背景
+		STAGE_BACKGROUND_TEST,
+		STAGE_BACKGROUND_SKY_PLACE,
+
+		// キャラクター選択画面
+		CHARACTER_SELECT_BACK,
+		CHARACTER_SELECT_FRAME_PLAYER1,
+		CHARACTER_SELECT_FRAME_PLAYER2,
+		CHARACTER_SELECT_DOTS,
+		CHARACTER_SELECT_RESERVE,
+		CHARACTER_SELECT_RANDOM,
+
+		// ゲームロード画面のVS
+		GAME_READY_FONT_V,
+		GAME_READY_FONT_S,
+		GAME_READY_BACK,
+
+		// ゲームロード画面でのキャラクター
+		GAME_READY_DOTS,
+
+		// バトル時のUI
+		UI_HP_BAR_FRAME,
+		UI_HP_BAR_NORMAL,
+		UI_HP_BAR_MAX,
+
+		// ラウンドアイコン
+		UI_ROUND_ICON,
+
+		// エフェクト
+		EFFECT_HIGH_ATTACK,
+		EFFECT_HIGH_GUARD,
+
+		// ラウンド演出用
+		ROUND_EFFECT_ROUND,
+		ROUND_EFFECT_NUMBER,
+		ROUND_EFFECT_FIGHT,
+
+		ROUND_EFFECT_KO,
+		ROUND_EFFECT_DRAW,
+		ROUND_EFFECT_TIME_OVER,
+		ROUND_EFFECT_PERFECT,
+
+		ROUND_EFFECT_PLAYER1_WIN,
+		ROUND_EFFECT_PLAYER2_WIN,
+		ROUND_EFFECT_DRAW_GAME,
+
+		// キャラの影
+		CHARACTER_SHADOW,
+
+		TEX_MAX,
+	};
+
+	// 1つのテクスチャを読み込むのに必要な情報を持つクラス
+	class MyTextureInfo{
+	private:
+		char			fileName[256];
+		unsigned char	hDiv;
+		unsigned char	vDiv;
+		unsigned short	hSize;
+		unsigned short	vSize;
+
+	public:
+		MyTextureInfo(char* _fileName, unsigned char _hDiv, unsigned char _vDiv, unsigned short _hSize, unsigned short _vSize);
+		virtual ~MyTextureInfo();
+		
+		char* getFilePath(){ return fileName; }
+		unsigned char getHDiv(){ return hDiv; }
+		unsigned char getVDiv(){ return vDiv; }
+		unsigned short getHSize(){ return hSize; }
+		unsigned short getVSize(){ return vSize; }
+	};
+
+	extern MyTextureInfo TEXTURE_INFO[];
+}
+
+
+#endif
