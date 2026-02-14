@@ -45,6 +45,8 @@ PCでも同様に動かせるようにしたことで、十分に作品を作り
 複数ある当たり判定を別々の色で表示するようにし、直観的に判断できるようなデバッグ表示を実装しています。
 さらに、細かい入力状態や内部ステートを一覧できるよなデバッグ表示も実装し、効率的なデバッグ作業ができるようにしました。
 
+<img height="250" alt="ヒットボックス表示" src="https://github.com/user-attachments/assets/d8a4755b-112a-4193-bb2d-b77dadd9f15a" /> <img height="250" alt="デバッグ表示" src="https://github.com/user-attachments/assets/73550555-7bed-4a71-ab17-41b682a7c450" />
+
 ## ✨こだわり・アピールポイント
 
 ### 手触りの良いキャラクター制御
@@ -55,6 +57,8 @@ PCでも同様に動かせるようにしたことで、十分に作品を作り
 操作がすぐに画面に反映され、触っていて気持ちの良い捜査官を実現しました。  
 
 ノックダウン時にスローモーション演出を入れるなど細かい部分にもこだわりを持って実装を行いました。
+
+<img height="300" alt="ヒットボックス表示" src="https://github.com/user-attachments/assets/052df843-ef45-4cab-a3cf-79c6878a89ac" />
 
 ### 格闘ゲームの細かな仕様を実現
 
@@ -89,12 +93,18 @@ PCでも同様に動かせるようにしたことで、十分に作品を作り
 チュートリアルモードを用意し、初めて触るプレイヤーにも遊びやすいようにしています。
 歩きやジャンプの基本操作から、上中下段のガード方法なども説明しています。
 
+<img height="300" alt="ヒットボックス表示" src="https://github.com/user-attachments/assets/8f91e1ab-ee45-4fd4-83b6-225f6dee0bd3" />
+
 ### ほぼ全てのテクスチャリソースを自作
 
 キャラクターのドットやアニメーションを自分で作成し、  
 触っていて楽しくなるような滑らかなアニメーションを実現しました。
 
 それ以外のヒット・ガードエフェクト、ゲーム内のUI、ステージ背景なども自作しています。
+
+<img height="250" alt="Char_Dots_Normal" src="https://github.com/user-attachments/assets/91e31f6b-376a-4184-883d-1e13d4d01bf1" />
+<img height="250" alt="BattleEffect_HighAttack" src="https://github.com/user-attachments/assets/313f175d-6d03-4127-b79d-f1e36ed6b1eb" />
+<img height="250" alt="BattleEffect_HighGuard" src="https://github.com/user-attachments/assets/2d7ad3f6-9c95-4058-a9c7-746bcec0d8b8" />
 
 ## 🔍自己レビュー
 
